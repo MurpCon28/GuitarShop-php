@@ -1,0 +1,2 @@
+The guitarstore folder is the php site - in it there is sql folder containing the database which is the same as the one in the database folder.
+The website folder is the html site.

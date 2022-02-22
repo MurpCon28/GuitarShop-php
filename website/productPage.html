@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rock'N'Roll Shack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar bg">
+        <div class="container-fluid">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="image/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="guitarsPage.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Guitars
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="guitarsPage.html">Electric</a>
+                                <a class="dropdown-item" href="#">Acoustic</a>
+                                <a class="dropdown-item" href="#">Gibson</a>
+                                <a class="dropdown-item" href="#">Fender</a>
+                                <a class="dropdown-item" href="#">Martin</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="loginPage.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registerPage.html">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class='nav-link fas fa-cart-plus'></i></a>
+                            <!--                            <a class="nav-link" href="checkout.html"><img class="shoppingCart" src="image/shoppingcart.png"></a>-->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                        <div class="card card-body">
+                                            <p class="cartText">1 item in<br>shopping cart</p>
+                                            <p class="cartText">1968 Les Paul<br>Custom Reissue<br>€5,800</p>
+                                            <a href="checkout.html"><button type="submit" class="add-to-cart-buttonCheckout">Go To Checkout</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="infoBanner">
+        <h4 class="infoBanner-text">1968 Les Paul Custom Reissue</h4>
+    </div>
+
+    <div class="bottomGap">
+        <div class="theme-switch-wrapper dmButton">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+            <em>Enable Dark Mode!</em>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <!--                <img src="image/1968-Les-Paul-Custom--Reissue.png" class="img-fluid">-->
+                <img src="image/1968-Les-Paul-Custom--ReissueBig.png" class="img-fluid">
+            </div>
+            <div class="col-8">
+                <h4 class="guitarHeading">Beauty...and a Beast!</h4>
+                <p class="guitarDes">The 1968 Les Paul Custom stood apart from its 1950s predecessors in a few significant ways. Instead of a solid mahogany body, it now had a solid maple top on a mahogany back - adding the clarity and bite that many rock guitarists sought. It also came standard with two humbuckers as opposed to three, providing additional picking clearance. And lastly it had a 14-degree peghead angle for reduced string tension.</p>
+                <p class="guitarDes">This set of features instantly became the new standard for the Les Paul Custom model, which has been produced continuously by Gibson ever since. This 1968 Les Paul Custom Reissue was designed to be the final say in historical accuracy, tone and feel. Every detail and spec was meticulously revived by the skilled artisans at Gibson Custom Shop to provide an amazing, life-long vintage ownership experience.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-8 underline">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-6">
+                        <h4 class="guitarHeading">Handedness</h4>
+                        <button class="handButton">Left</button><button class="handButton">Right</button>
+                    </div>
+                    <div class="col-6">
+                        <h4 class="guitarHeading">Specifications</h4>
+                        <div class="row">
+                            <div class="col-7">
+                                <p class="specDes">Body Type</p>
+                                <p class="specDes">Colour</p>
+                                <p class="specDes">Material</p>
+                                <p class="specDes">Number of Frets</p>
+                            </div>
+                            <div class="col-5">
+                                <p class="guitarDes">Les Paul</p>
+                                <p class="guitarDes">Ebony</p>
+                                <p class="guitarDes">Solid Mahogany</p>
+                                <p class="guitarDes">22</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-8 underline">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-1">
+            </div>
+            <div class="col-7">
+                <h4 class="guitarPricing middle">€5,800</h4>
+                <a href="https://www.gibson.com"><button class="local-shop-button">Local Shop</button></a><a href="checkout.html"><button class="add-to-cart-button">Add to Cart</button></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-8 underline">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h4 class="guitarHeading">You Might Also Like</h4>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="my-card">
+                            <a href="productPage.html">
+                                <img src="image/Tom-Morello-Stractocaster.png" class="img-fluid small-card-image">
+                                <p class="card-text">Tom Morello Stractocaster</p>
+                                <p class="card-text">€1,500</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="my-card">
+                            <a href="productPage.html">
+                                <img src="image/Les-Paul-Standard-'50s.png" class="img-fluid small-card-image">
+                                <p class="card-text">Les Paul Standard '50s</p>
+                                <p class="card-text">€2,500</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="my-card">
+                            <a href="productPage.html">
+                                <img src="image/Jimi-Hendrix-Stractocaster.png" class="img-fluid small-card-image">
+                                <p class="card-text">Jimi Hendrix Stractocaster</p>
+                                <p class="card-text">€1,009</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="my-card">
+                            <a href="productPage.html">
+                                <img src="image/sg-modern.png" class="img-fluid small-card-image">
+                                <p class="card-text">SG Modern</p>
+                                <p class="card-text">€2,000<p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="endPageGapSpace">
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <h4 class="footerFont">Social Media</h4>
+                    <img src="image/facebookLogo.png" class="img-fluid socialIcon">
+                    <img src="image/twitterLogo.png" class="img-fluid socialIcon">
+                    <img src="image/instaLogo.png" class="img-fluid socialIcon">
+                    <img src="image/youtubeLogo.png" class="img-fluid socialIcon">
+                </div>
+                <div class="col-5">
+                    <h4 class="footerFont">Sign up to Rock'N'Roll Shack Newletter</h4>
+                    <form class="input-group">
+                        <input type="text" class="form-control form-control-sm" placeholder="Email Address" aria-label="Your email" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-sm btn-outline-white my-0" type="button">Sign up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footerGap">
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="col-6">
+                        <h4 class="footerFont">Our Commpany</h4>
+                        <a href="#">
+                            <p class="footerInfoFont">About Our Brands</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Careers</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Contact Us</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">News</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="col-6">
+                        <h4 class="footerFont">Products</h4>
+                        <a href="#">
+                            <p class="footerInfoFont">Brands</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Les Paul</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">SG Models</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">ES-Style Models</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Designer Models</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Artist Models</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Acoustic</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Stratocaster Models</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Telecaster Models</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Custom Models</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="col-9">
+                        <h4 class="footerFont">Support</h4>
+                        <a href="#">
+                            <p class="footerInfoFont">Customer Service</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Warranty Registration and Info</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Repair and Restoration</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Serial Number FAQ</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Store Policies and FAQ</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footerGap">
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="image/gibsonLogo.png" class="img-fluid">
+                </div>
+                <div class="col-4">
+                    <img src="image/fenderLogo.png" class="img-fluid">
+                </div>
+                <div class="col-4">
+                    <img src="image/MartinLogo.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="footerGap">
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rock'N'Roll Shack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar bg">
+        <div class="container-fluid">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="image/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="guitarsPage.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Guitars
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="guitarsPage.html">Electric</a>
+                                <a class="dropdown-item" href="#">Acoustic</a>
+                                <a class="dropdown-item" href="#">Gibson</a>
+                                <a class="dropdown-item" href="#">Fender</a>
+                                <a class="dropdown-item" href="#">Martin</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="loginPage.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registerPage.html">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class='nav-link fas fa-cart-plus'></i></a>
+                            <!--                            <a class="nav-link" href="checkout.html"><img class="shoppingCart" src="image/shoppingcart.png"></a>-->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                        <div class="card card-body">
+                                            <p class="cartText">1 item in<br>shopping cart</p>
+                                            <p class="cartText">1968 Les Paul<br>Custom Reissue<br>€5,800</p>
+                                            <a href="checkout.html"><button type="submit" class="add-to-cart-buttonCheckout">Go To Checkout</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="infoBanner">
+        <h4 class="infoBanner-text">Admin - Add Guitar</h4>
+    </div>
+
+    <div class="bottomGap">
+        <div class="theme-switch-wrapper dmButton">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+            <em>Enable Dark Mode!</em>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <form class="needs-validation" action="adminPage.html">
+                    <h4 class="guitarHeading addressInfoH4">General Information</h4>
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="validationCustom01" class="checkoutLables">Guitar Name</label>
+                            <input type="text" class="form-control" placeholder="Les Paul Standard '50s" required>
+                        </div>
+                        <div class="col">
+                            <label for="validationCustom02" class="checkoutLables">Price</label>
+                            <input type="text" class="form-control" placeholder="eg €5,000" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="validationCustom02" class="checkoutLables">Handedness</label>
+                            <select id="inputHand" class="form-control" required>
+                                <option value="">Choose...</option>
+                                <option value="1">Left</option>
+                                <option value="2">Right</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="validationCustom01" class="checkoutLables">Guitar Quote</label>
+                            <input type="text" class="form-control" placeholder="Beauty...and a Beast!" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="validationCustom03" class="checkoutLables">Description</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="12" required></textarea>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label class="checkoutLables" for="exampleFormControlFile1">Example file input</label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1" required>
+                        </div>
+                    </form>
+                    <h4 class="guitarHeading addressInfoH4">Specifications</h4>
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label for="validationCustom06" class="checkoutLables">Brand Type</label>
+                            <select id="inputBrandType" class="form-control" required>
+                                <option value="">Choose...</option>
+                                <option value="1">Gibson</option>
+                                <option value="2">Fender</option>
+                                <option value="3">Martin</option>
+                            </select>
+                        </div>
+                        <div class="form-group col">
+                            <label for="validationCustom06" class="checkoutLables">Body Type</label>
+                            <select id="inputBodyType" class="form-control" required>
+                                <option value="">Choose...</option>
+                                <option value="1">Les Paul</option>
+                                <option value="2">Sg Models</option>
+                                <option value="3">ES-Style Models</option>
+                                <option value="4">Designer Models</option>
+                                <option value="5">Artist Models</option>
+                                <option value="6">Acoustic</option>
+                                <option value="7">Stratocaster Models</option>
+                                <option value="8">Telecaster Models</option>
+                                <option value="9">Custom Models</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label for="validationCustom06" class="checkoutLables">Colour</label>
+                            <input type="text" class="form-control" placeholder="Gold" required>
+                        </div>
+                        <div class="form-group col">
+                            <label for="validationCustom06" class="checkoutLables">Material Type</label>
+                            <input type="text" class="form-control" placeholder="Solid Mahogany" required>
+                        </div>
+                        <div class="form-group col">
+                            <label for="validationCustom07" class="checkoutLables">Number Of Frets</label>
+                            <input type="text" class="form-control" id="inputCity" placeholder="24" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-10 addressInfoH4">
+                            <a href="index.html"><button type="reset" class="cancelButton">Cancel</button></a>
+                        </div>
+                        <div class="col-2 addressInfoH4"><a href="adminPage.html"><button type="submit" class="createUserButton">Add Guitar</button></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="endPageGapSpace">
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <h4 class="footerFont">Social Media</h4>
+                    <img src="image/facebookLogo.png" class="img-fluid socialIcon">
+                    <img src="image/twitterLogo.png" class="img-fluid socialIcon">
+                    <img src="image/instaLogo.png" class="img-fluid socialIcon">
+                    <img src="image/youtubeLogo.png" class="img-fluid socialIcon">
+                </div>
+                <div class="col-5">
+                    <h4 class="footerFont">Sign up to Rock'N'Roll Shack Newletter</h4>
+                    <form class="input-group">
+                        <input type="text" class="form-control form-control-sm" placeholder="Email Address" aria-label="Your email" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-sm btn-outline-white my-0" type="button">Sign up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footerGap">
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="col-6">
+                        <h4 class="footerFont">Our Commpany</h4>
+                        <a href="#">
+                            <p class="footerInfoFont">About Our Brands</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Careers</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Contact Us</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">News</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="col-6">
+                        <h4 class="footerFont">Products</h4>
+                        <a href="#">
+                            <p class="footerInfoFont">Brands</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Les Paul</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">SG Models</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">ES-Style Models</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Designer Models</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Artist Models</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Acoustic</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Stratocaster Models</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Telecaster Models</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Custom Models</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="col-9">
+                        <h4 class="footerFont">Support</h4>
+                        <a href="#">
+                            <p class="footerInfoFont">Customer Service</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Warranty Registration and Info</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Repair and Restoration</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Serial Number FAQ</p>
+                        </a>
+                        <a href="#">
+                            <p class="footerInfoFont">Store Policies and FAQ</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footerGap">
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="image/gibsonLogo.png" class="img-fluid">
+                </div>
+                <div class="col-4">
+                    <img src="image/fenderLogo.png" class="img-fluid">
+                </div>
+                <div class="col-4">
+                    <img src="image/MartinLogo.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="footerGap">
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>
